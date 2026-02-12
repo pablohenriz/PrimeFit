@@ -176,7 +176,7 @@ nav .menu-nav button:hover {
     flex-direction: column; /* Faz os itens ficarem um embaixo do outro */
     align-items: center;    /* Centraliza horizontalmente agora que é coluna */
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #e2e2e2;
     width: 100%;
     height: auto;           /* Mudado de 100vh para auto para não cortar o conteúdo */
     padding: 40px 0;
@@ -265,4 +265,58 @@ nav .menu-nav button:hover {
 
 /*--- Serviços ---*/
 
+.service-container {
+    background-color: var(--branco);
+    height: 600px;
+}
 
+.service-container .title-service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+
+}
+
+.title-service h1 {
+    font-size: 60px;
+}
+
+.title-service p {
+    font-size: 25px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+/*--- Serviço OPÇÕES ---*/
+
+.service-container {
+    
+}
+
+.services-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    padding: 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#box-service {
+    display: flex;
+    flex-direction: column;
+    border: #0f172a 2px solid;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#box-service h1 {
+    margin-left: 30px;
+    margin-top: 90px;
+}
+#box-service p {
+    width: 400px;
+    margin-left: 30px;
+}
