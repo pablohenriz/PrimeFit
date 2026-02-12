@@ -5,6 +5,7 @@
     --preto-prime: #0f172a;
     --branco: #ffffff;
     --vermelho-escuro: #b50000;
+    --cinza: #4e4e4e;
 }
 
 * {
@@ -23,12 +24,16 @@ body {
     background: black;
 }
 
+p {
+    color:var(--cinza);
+}
+
 /*---- NAVBAR ---*/
 
 nav {
     background: var(--branco);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
@@ -76,8 +81,8 @@ nav .menu-nav button {
     margin-left: 40px;
     background: var(--vermelho-prime);
     color: #ffffff;
-    font-size: 16px;
-    padding: 10px 24px 10px 24px;
+    font-size: 20px;
+    padding: 15px 30px 15px 30px;
     border-radius: 30px;
     transition:  all 0.4s ease;
 }
@@ -90,13 +95,13 @@ nav .menu-nav button:hover {
 /*---- MAIN INICIAL ---*/
 .main-inicial {
     position: relative;
-    background-image: url(/img/ChatGPT\ Image\ 20\ de\ jan.\ de\ 2026\,\ 23_43_20.webp);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/photo-1761971975769-97e598bf526b.jpeg);
     background-size: cover;
     background-position: center;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
@@ -165,4 +170,99 @@ nav .menu-nav button:hover {
 }
 
 /* --- CONTAINER SOBRE --- */
+
+.sobre-contain {
+    display: flex;
+    flex-direction: column; /* Faz os itens ficarem um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente agora que é coluna */
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;           /* Mudado de 100vh para auto para não cortar o conteúdo */
+    padding: 40px 0;
+}
+
+.sobre-block1 {
+    display: flex;
+    margin-top: 90px;
+    height: 500px;
+}
+
+
+.cont-text-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    margin-right: 90px;
+    height: 500px;
+}
+.cont-text-sobre h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.cont-text-sobre p {
+    width: 900px;
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+
+.cont-img-sobre img {
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*--- INFORMAÇÕES DA EMPRESA ---*/
+.info {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+}
+.block-info {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.block-info h1 {
+    font-size: 40px;
+}
+
+.block-info p {
+    font-size: 18px;
+}
+
+
+/*--- ICONS DE INFORMAÇÃO ---*/
+.icon-info {
+    background-color: var(--vermelho-prime);
+    border-radius: 50%; /* 50% em um quadrado sempre gera um círculo */
+    
+    /* Defina um tamanho fixo igual para os dois */
+    width: 80px; 
+    height: 80px;
+
+    /* Centraliza o ícone branco dentro do círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Remova o padding ou ajuste se necessário */
+    padding: 0; 
+    margin: 0 auto;
+    margin-bottom : 20px;
+}
+
+.icon-info svg {
+    width: 40px;
+    height: 40px;
+}
+
+/*--- Serviços ---*/
+
 
