@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 :root {
     --vermelho-prime: #e60000;
@@ -8,7 +8,7 @@
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Google Sans", sans-serif;
     margin: 0;
     padding: 0;
     border: none;
@@ -23,63 +23,146 @@ body {
     background: black;
 }
 
+/*---- NAVBAR ---*/
+
 nav {
     background: var(--branco);
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-nav .logo_nav {
+nav .logo-nav {
     display: flex;
     align-items: center;
 }
 
-nav .logo_nav img {
+nav .logo-nav img {
     width: 80px;
     height: auto;
     transform: rotate(-45deg);
     margin-right: 10px;
 }
 
-nav .logo_nav h1{
+nav .logo-nav h1{
     font-size: 45px;
 }
 
-nav .logo_nav span{
+nav .logo-nav span{
     font-size: 45px;
     color: var(--vermelho-prime);
 }
 
-nav .menu_nav {
+nav .menu-nav {
     display: flex;
     align-items: center;
 }
 
-nav .menu_nav a {
-    font-size: 33px;
+nav .menu-nav a {
+    font-size: 20px;
     margin-left: 40px;
     color: #4e4e4e;
-    
+    transition:  all 0.4s ease;
 }
 
-nav .menu_nav button {
+nav .menu-nav a:hover{
+    color: var(--vermelho-prime);
+}
+
+nav .menu-nav button {
     margin-left: 40px;
     background: var(--vermelho-prime);
     color: #ffffff;
-    font-size: 30px;
-    padding: 24px 50px 24px 50px;
-    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 30px;
+    transition:  all 0.4s ease;
 }
 
-nav .menu_nav button:hover {
+nav .menu-nav button:hover {
     background: var(--vermelho-escuro);
 }
 
-.main_inicial {
-    background: url("/img/ChatGPT\ Image\ 20\ de\ jan.\ de\ 2026\,\ 23_43_20.webp");
-    background-repeat: no-repeat;
+
+/*---- MAIN INICIAL ---*/
+.main-inicial {
+    position: relative;
+    background-image: url(/img/ChatGPT\ Image\ 20\ de\ jan.\ de\ 2026\,\ 23_43_20.webp);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
+
+
+/*---- CONTEUDO MAIN     ---*/
+.main-inicial .conteudo-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.main-inicial h1 {
+    color: var(--branco);
+    font-size: 90px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.main-inicial p {
+    color: var(--branco);
+    font-size: 32px;
+    width: 900px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+
+/*---- BOTÕES INICIAIS ---*/
+.main-inicial .butons-Initial .btn-1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 16px 32px 16px 32px;
+    background-color: var(--vermelho-prime);
+    color: var(--branco);
+    margin-right: 30px;
+    transition:  all 0.4s ease;
+}
+
+.main-inicial .butons-Initial .btn-1:hover {
+    background-color: var(--vermelho-escuro);
+}
+
+.main-inicial .butons-Initial .btn-2 {
+    padding: 16px 32px 16px 32px;
+    border: var(--branco) 2px solid;
+    background-color: transparent;
+    color: var(--branco);
+    border-radius: 30px;
+    font-size: 20px;
+    transition:  all 0.4s ease;
+}
+
+.main-inicial .butons-Initial .btn-2:hover {
+    background-color: var(--branco);
+    color: black;
+}
+
+/* --- CONTAINER SOBRE --- */
+
