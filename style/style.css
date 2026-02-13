@@ -4,10 +4,10 @@
     --vermelho-prime: #e60000;
     --preto-prime: #0f172a;
     --branco: #ffffff;
-    --quaseBranco: #f8f8f8; 
+    --quaseBranco: #f8f8f8;
     --vermelho-escuro: #b50000;
     --cinza: #4e4e4e;
-    --meioBranco: #e6e6e6; 
+    --meioBranco: #e6e6e6;
 }
 
 * {
@@ -27,12 +27,13 @@ body {
 }
 
 p {
-    color:var(--cinza);
+    color: var(--cinza);
 }
 
 ul {
     list-style-type: none;
 }
+
 /*---- NAVBAR ---*/
 
 nav {
@@ -57,11 +58,11 @@ nav .logo-nav img {
     margin-right: 10px;
 }
 
-nav .logo-nav h1{
+nav .logo-nav h1 {
     font-size: 45px;
 }
 
-nav .logo-nav span{
+nav .logo-nav span {
     font-size: 45px;
     color: var(--vermelho-prime);
 }
@@ -75,10 +76,10 @@ nav .menu-nav a {
     font-size: 20px;
     margin-left: 40px;
     color: #4e4e4e;
-    transition:  all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-nav .menu-nav a:hover{
+nav .menu-nav a:hover {
     color: var(--vermelho-prime);
 }
 
@@ -89,7 +90,7 @@ nav .menu-nav button {
     font-size: 20px;
     padding: 15px 30px 15px 30px;
     border-radius: 30px;
-    transition:  all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 nav .menu-nav button:hover {
@@ -100,7 +101,7 @@ nav .menu-nav button:hover {
 /*---- MAIN INICIAL ---*/
 .main-inicial {
     position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/photo-1761971975769-97e598bf526b.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/photo-1761971975769-97e598bf526b.jpeg);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -152,7 +153,7 @@ nav .menu-nav button:hover {
     background-color: var(--vermelho-prime);
     color: var(--branco);
     margin-right: 30px;
-    transition:  all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .main-inicial .butons-Initial .btn-1:hover {
@@ -166,7 +167,7 @@ nav .menu-nav button:hover {
     color: var(--branco);
     border-radius: 30px;
     font-size: 20px;
-    transition:  all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .main-inicial .butons-Initial .btn-2:hover {
@@ -178,12 +179,15 @@ nav .menu-nav button:hover {
 
 .sobre-contain {
     display: flex;
-    flex-direction: column; /* Faz os itens ficarem um embaixo do outro */
-    align-items: center;    /* Centraliza horizontalmente agora que é coluna */
+    flex-direction: column;
+    /* Faz os itens ficarem um embaixo do outro */
+    align-items: center;
+    /* Centraliza horizontalmente agora que é coluna */
     justify-content: center;
     background-color: var(--quaseBranco);
     width: 100%;
-    height: auto;           /* Mudado de 100vh para auto para não cortar o conteúdo */
+    height: auto;
+    /* Mudado de 100vh para auto para não cortar o conteúdo */
     padding: 40px 0;
 }
 
@@ -202,6 +206,7 @@ nav .menu-nav button:hover {
     margin-right: 90px;
     height: 500px;
 }
+
 .cont-text-sobre h1 {
     font-size: 50px;
     font-weight: 300;
@@ -226,9 +231,10 @@ nav .menu-nav button:hover {
 .info {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 1700px;
 }
+
 .block-info {
     text-align: center;
     margin-top: 60px;
@@ -246,21 +252,22 @@ nav .menu-nav button:hover {
 /*--- ICONS DE INFORMAÇÃO ---*/
 .icon-info {
     background-color: var(--vermelho-prime);
-    border-radius: 50%; /* 50% em um quadrado sempre gera um círculo */
-    
+    border-radius: 50%;
+    /* 50% em um quadrado sempre gera um círculo */
+
     /* Defina um tamanho fixo igual para os dois */
-    width: 80px; 
+    width: 80px;
     height: 80px;
 
     /* Centraliza o ícone branco dentro do círculo */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     /* Remova o padding ou ajuste se necessário */
-    padding: 0; 
+    padding: 0;
     margin: 0 auto;
-    margin-bottom : 20px;
+    margin-bottom: 20px;
 }
 
 .icon-info svg {
@@ -279,7 +286,7 @@ nav .menu-nav button:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
 
 }
 
@@ -297,15 +304,16 @@ nav .menu-nav button:hover {
 
 /*--- Serviço OPÇÕES ---*/
 
-.service-container {
-}
+.service-container {}
 
 .services-group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas iguais */
     gap: 20px;
     width: 1600px;
-    margin: 40px auto; /* Centraliza o bloco todo */
+    margin: 40px auto;
+    /* Centraliza o bloco todo */
     padding: 0 20px;
 }
 
@@ -316,22 +324,20 @@ nav .menu-nav button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     padding: 25px;
     background-size: cover;
     background-position: center;
-    color: white; 
+    color: white;
     cursor: pointer;
-    background-size: 110%; 
+    background-size: 110%;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-size 0.5s ease; 
-    overflow: hidden;
+    transition: background-size 0.5s ease;
 }
 
 .box-service:hover {
     background-size: 120%;
-
 }
 
 .service-icon {
@@ -362,35 +368,35 @@ nav .menu-nav button:hover {
 
 /* Bloco 1 - Musculação */
 #caixa-1 {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), 
-                      url('/img/photo-1591258370814-01609b341790.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url('/img/photo-1591258370814-01609b341790.jpeg');
 }
 
 /* Bloco 2 - Yoga (Exemplo) */
 #caixa-2 {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), 
-                      url('/img/photo-1630415188550-9e454489ce3a.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url('/img/photo-1630415188550-9e454489ce3a.jpeg');
 }
 
 /* Bloco 3 - Cardio (Exemplo) */
 #caixa-3 {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), 
-                      url('/img/photo-1651077837628-52b3247550ae.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url('/img/photo-1651077837628-52b3247550ae.jpeg');
 }
 
 #caixa-4 {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), 
-                      url('/img/photo-1739430548323-d3a55a714052.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url('/img/photo-1739430548323-d3a55a714052.jpeg');
 }
 
 #caixa-5 {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), 
-                      url('/img/photo-1761971975769-97e598bf526b.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url('/img/photo-1761971975769-97e598bf526b.jpeg');
 }
 
 #caixa-6 {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), 
-                      url('/img/photo-1591258370814-01609b341790.jpeg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        url('/img/photo-1591258370814-01609b341790.jpeg');
 }
 
 
@@ -433,6 +439,7 @@ nav .menu-nav button:hover {
     background-color: var(--branco);
     text-align: center;
     display: flex;
+    height: 670px;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -451,11 +458,11 @@ nav .menu-nav button:hover {
     font-weight: 400;
 }
 
-.box-plano h1 span{
+.box-plano h1 span {
     font-size: 25px;
     color: var(--cinza);
     font-weight: 200;
-    
+
 }
 
 .box-plano li {
@@ -476,7 +483,7 @@ nav .menu-nav button:hover {
     color: var(--branco);
     font-size: 18px;
     margin-top: 10px;
-    transition:  all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .box-plano .botao-plano:hover {
@@ -511,6 +518,7 @@ nav .menu-nav button:hover {
     justify-content: start;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 70px;
 }
 
 .box-plano-1 h3 {
@@ -528,12 +536,12 @@ nav .menu-nav button:hover {
     color: var(--branco);
 }
 
-.box-plano-1 h1 span{
+.box-plano-1 h1 span {
     font-size: 25px;
     color: var(--cinza);
     font-weight: 200;
     color: var(--branco);
-    
+
 }
 
 .box-plano-1 li {
@@ -556,9 +564,141 @@ nav .menu-nav button:hover {
     font-size: 18px;
     margin-bottom: 40px;
     margin-top: 20px;
-    transition:  all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .box-plano-1 .botao-plano-1:hover {
     background-color: var(--meioBranco);
+}
+
+/*--- COMENTARIO DE CLIENTES ---*/
+
+.clientes-container {
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientes-container .title-clientes {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.clientes-container .title-clientes h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 70px;
+}
+
+.clientes-container .title-clientes p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.group-comentarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 90px;
+}
+
+.comentario {
+    width: 600px;
+    padding-left: 40px;
+    background-color: var(--quaseBranco);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.4s ease;
+}
+
+.comentario:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.comentario p {
+    width: 500px;
+    font-size: 20px;
+}
+
+/*--- PERFIL DO CLIENTE DO COMENTARIO ---*/
+.perfil-Cliente {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.perfil-Cliente p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.perfil-Cliente img {
+    width: 64px;
+    height: auto;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+/*--- Estrelas comentarios ---*/
+.comentario .estrelas img {
+    width: 32px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+/*--- Estrutura da academia section ---*/
+
+.estrutura-container {
+    background-color: var(--quaseBranco);
+}
+
+.title-esturtura {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title-esturtura h1 {
+    font-size: 70px;
+    font-weight: 200;   \
+}
+
+.title-esturtura p {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.img-estrutura-grupo {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.img-estrutura-grupo .img-1 {
+    cursor: pointer;
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.img-estrutura-grupo .img-1 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+    user-select: none;
+}
+
+.img-estrutura-grupo .img-1:hover {
+    background-size: 120%;
 }
