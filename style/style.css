@@ -98,6 +98,11 @@ nav .menu-nav button:hover {
 }
 
 
+
+
+
+
+
 /*---- MAIN INICIAL ---*/
 .main-inicial {
     position: relative;
@@ -174,6 +179,12 @@ nav .menu-nav button:hover {
     background-color: var(--branco);
     color: black;
 }
+
+
+
+
+
+
 
 /* --- CONTAINER SOBRE --- */
 
@@ -275,6 +286,9 @@ nav .menu-nav button:hover {
     height: 40px;
 }
 
+
+
+
 /*--- Serviços ---*/
 
 .service-container {
@@ -302,6 +316,11 @@ nav .menu-nav button:hover {
     margin-top: 20px;
 }
 
+
+
+
+
+
 /*--- Serviço OPÇÕES ---*/
 
 .service-container {}
@@ -309,11 +328,9 @@ nav .menu-nav button:hover {
 .services-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 colunas iguais */
     gap: 20px;
     width: 1600px;
     margin: 40px auto;
-    /* Centraliza o bloco todo */
     padding: 0 20px;
 }
 
@@ -327,7 +344,6 @@ nav .menu-nav button:hover {
     justify-content: flex-end;
     padding: 25px;
     background-size: cover;
-    background-position: center;
     color: white;
     cursor: pointer;
     background-size: 110%;
@@ -366,6 +382,7 @@ nav .menu-nav button:hover {
     color: var(--branco);
 }
 
+
 /* Bloco 1 - Musculação */
 #caixa-1 {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
@@ -400,6 +417,10 @@ nav .menu-nav button:hover {
 }
 
 
+
+
+
+
 /*--- PLANOS ---*/
 
 .planos-container {
@@ -425,6 +446,10 @@ nav .menu-nav button:hover {
 .planos-container .title-plano p {
     font-size: 20px;
 }
+
+
+
+
 
 /*--- Planos BOX ---*/
 
@@ -489,6 +514,12 @@ nav .menu-nav button:hover {
 .box-plano .botao-plano:hover {
     background-color: var(--vermelho-escuro);
 }
+
+
+
+
+
+
 
 /*--- Plano Premium ---*/
 .tag-popular {
@@ -571,7 +602,12 @@ nav .menu-nav button:hover {
     background-color: var(--meioBranco);
 }
 
-/*--- COMENTARIO DE CLIENTES ---*/
+
+
+
+
+
+/*---  COMENTARIO DE CLIENTES        ---*/
 
 .clientes-container {
     background: var(--branco);
@@ -679,30 +715,91 @@ nav .menu-nav button:hover {
 
 .img-estrutura-grupo {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
-
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .img-estrutura-grupo .img-1 {
+    width: 400px;  /* Tamanho que você definiu */
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden; /* ESSENCIAL: Corta a imagem quando ela cresce */
+    margin-bottom: 60px;
     cursor: pointer;
-    background-size: 110%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-size 0.5s ease;
-    overflow: hidden;
-    background-size: cover;
 }
 
-.img-estrutura-grupo .img-1:hover {
-    background-size: 120%;
+.img-estrutura-grupo .img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que preencha o quadrado sem achatar */
+    transition: transform 0.5s ease; /* Efeito suave de zoom */
+    display: block;
+    user-select: none;
 }
 
+.img-estrutura-grupo .img-1:hover img {
+    transform: scale(1.15); 
+}
 .img-estrutura-grupo .img-1 img {
     width: 400px;
     height: 400px;
     border-radius: 15px;
     object-fit: cover;
     user-select: none;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    transition: all 0.4s ease;
+}
+
+.img-estrutura-grupo .img-1 img:hover {
+    background-size: 120%;
+    filter: brightness(60%);
+}
+
+
+/*--- SESSAO DE CONTATO ---*/
+
+.container-contato {
+    background-color: var(--branco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contato h2 {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.container-contato .title-contato {
+    margin-top: 80px;   
+}
+
+
+.container-contato .title-contato h1 {
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.container-contato .title-contato p {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+/* --- Grupos informações de contato --- */
+.groupos-iformações-de-contato {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+/* --- INFORMAÇÕES DE CONTATO --- */
+.group-inf-contato {
+    
 }
